@@ -1,0 +1,55 @@
+@import '~@/assets/styl/varibles.styl'
+
+.flex
+    display flex
+    align-items center
+
+.flex-between
+    display flex
+    align-items center
+    justify-content space-between
+
+.flex-around
+    display flex
+    align-items center
+    justify-content space-around
+
+.num
+    font-family 'electronicFont'
+
+.chart
+    width 100%
+    height 100%
+
+.margin--bottom
+    margin-bottom 8px
+
+.tip
+    position absolute
+    font-size 14px
+    background-color $titleColor
+    color #333
+    padding 5px 10px
+    border-radius 25px
+    transform translate(-53%, -205%)
+
+    :before
+        content ''
+        width 14px
+        height 14px
+        transform rotateZ(45deg) translate(50%, 100%)
+        position absolute
+        background $titleColor
+        bottom 7px
+        left 50%
+
+.border--bottom
+    position relative
+
+    &:after
+        content ''
+        position absolute
+        bottom 0
+        width 100%
+        height 2px
+        background linear-gradient(to right,$textColor,transparent)
