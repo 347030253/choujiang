@@ -154,7 +154,7 @@ export default {
         this.count = res.data.count.count;
         this.form = this.prizeList[0];
       });
-    },cd 
+    },
     getList() {
       getHjmd().then(res => {
         res.data.map(v => {
@@ -339,8 +339,8 @@ export default {
   .sideTitle
     text-align center
     img
-      width .7rem
-      padding-top .05rem
+      width 1rem
+      padding-top .2rem
 //左边框样式
   .prize
     text-align center
@@ -504,9 +504,6 @@ export default {
   display inline-block
   transition all 0.5s
   transition-delay 2s
-
-// .numw:hover
-//   height 200px
 
 .numw ul
   list-style none
